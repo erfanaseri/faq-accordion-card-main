@@ -1,0 +1,19 @@
+{
+  "name": "faq-accordion-card-main",
+  "version": "1.0.0",
+  "description": "a signle-page web application for FAQ",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Erfan Naseri",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.2"
+  },
+  "dependencies": {
+    "core-js": "^3.13.0",
+    "regenerator-runtime": "^0.13.7"
+  }
+}
