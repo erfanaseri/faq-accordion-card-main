@@ -82,18 +82,20 @@ body {
   text-align: center;
 }
 
-.divider {
+/* .divider {
   border-bottom: 3px solid var(--clr-primary-7);
-}
+} */
 
 .question {
   color: var(--clr-primary-5);
+  border-bottom: 1px solid var(--clr-primary-7);
+  cursor: pointer;
 }
 
 .answer {
   color: var(--clr-primary-6);
   line-height: 1.6;
-  /* border-bottom: 1px solid var(--clr-primary-7); */
+  border-bottom: 1px solid var(--clr-primary-7);
 }
 
 .question ::after {
