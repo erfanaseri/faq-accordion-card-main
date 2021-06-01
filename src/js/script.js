@@ -7,13 +7,17 @@ const answers = document.querySelectorAll(".answer");
 
 questions.forEach((questionEl) => {
   questionEl.addEventListener("click", function (e) {
-    const sibling = questionEl.nextElementSibling;
-
     // Changing the orientation of the arrow
     this.classList.toggle("arrow-transform");
 
+    // Adding the highlight class
+    this.classList.toggle("clicked-highlight");
+
     // Toggle the answer upon each click
+    const sibling = questionEl.nextElementSibling;
     sibling.classList.toggle("content-hide");
+
+    // sibling.style.setProperty("transition", "display 1s ease-in");
 
     // Removing the divider line when there is the answer class
     if (!sibling.classList.contains("content-hide"))
