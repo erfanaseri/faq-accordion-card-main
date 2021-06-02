@@ -73,7 +73,7 @@ body {
 
 .accordion {
   padding: 5px;
-  margin: 10px 20px;
+  margin: 15px 20px;
 }
 
 .title {
@@ -86,18 +86,21 @@ body {
   border-bottom: 1px solid var(--clr-primary-7);
   cursor: pointer;
   transition: color 0.185s ease-in;
+  padding: 10px;
 }
 
 .answer {
   color: var(--clr-primary-6);
   line-height: 1.6;
   border-bottom: 1px solid var(--clr-primary-7);
+  margin-left: 25px;
+  margin-top: -15px;
 }
 
 .question ::after {
   content: url(../img/icon-arrow-down.svg);
   position: absolute;
-  right: 20px;
+  right: 25px;
 }
 
 .arrow-transform ::after {
@@ -130,14 +133,14 @@ body {
     position: relative;
     background-color: white;
     border: 1px solid white;
-    min-height: 550px;
-    width: 700px;
+    min-height: 500px;
+    width: 900px;
     border-radius: 25px;
   }
 
   .desktop-design {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 60%;
   }
 
   img {
@@ -155,18 +158,37 @@ body {
 
   .woman-desktop-img {
     width: 400px;
-    top: 105px;
+    top: 70px;
     left: -60px;
   }
 
   .box-img {
     width: 150px;
-    top: 230px;
+    top: 200px;
     left: -100px;
   }
 
   .right-container .title {
     text-align: left;
     font-size: large;
+  }
+
+  .right-container {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+  }
+
+  .question ::after {
+    right: 120px;
+  }
+
+  .question {
+    padding: 15px;
+  }
+
+  .title {
+    margin-left: 25px;
   }
 }
